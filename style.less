@@ -1,0 +1,29 @@
+/*
+Theme Name: errbit
+Theme URI: http://github.com/tophermade/errbit
+Author: topher wilson
+Author URI: http://nowarpzone.com
+Description: basic wordpress base. minimal complexity, no child-theme nonsense.
+Version: 0.1.0
+License: gpl v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+// mixins
+@import url("paint/base/reset.less");
+@import url("paint/base/mixins.less");
+@import url("paint/base/layout.less");
+
+
+
+// page type oriented stylesheets (eg blog, event etc)
+
+
+
+// queries for responsivity. mobile first, so they should stack,
+// progressively building on what came before
+@import url("paint/queries/600.less");
+@import url("paint/queries/960.less");
+@import url("paint/queries/1240.less");
