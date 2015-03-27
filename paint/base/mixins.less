@@ -54,13 +54,6 @@
   perspective: @val;
 }
 
-.bgsize(@size: 100% 100%){
-  -webkit-background-size: @size;
-  -moz-background-size: @size;
-  -o-background-size: @size;
-  background-size: @size;
-}
-
 .gradient(@start: #eee, @end: #777) {
   background: @start;
   background-image: -moz-linear-gradient(top, @start, @end);
@@ -91,12 +84,12 @@
   background: linear-gradient(to bottom,  @color1 0%,@color1 50%,@color2 51%,@color2 100%);
 }
 
-.transition(@who: all, @length: .5s, @how: ease-out){
-  -webkit-transition: @who @length @how;
-  -moz-transition: @who @length @how;
-  -ms-transition: @who @length @how;
-  -o-transition: @who @length @how;
-  transition: @who @length @how;
+.transition(@var){
+  -webkit-transition: @var;
+  -moz-transition: @var;
+  -ms-transition: @var;
+  -o-transition: @var;
+  transition: @var;
 }
 
 .columns(@count: 2, @width: 200px, @gap: 20px){
@@ -110,15 +103,11 @@
 
 .mask(@img: none){
   -webkit-mask: url("../img/@{img}") top left / cover;
-  -o-mask: url("../img/@{img}") top left / cover;
-  -ms-mask: url("../img/@{img}") top left / cover;
   mask: url("../img/@{img}") top left / cover;
 }
 
 .mask(@img: none, @method: top left / cover){
   -webkit-mask: url("../img/@{img}") @method;
-  -o-mask: url("../img/@{img}") @method;
-  -ms-mask: url("../img/@{img}") @method;
   mask: url("../img/@{img}") @method;
 }
 
@@ -162,27 +151,5 @@
     right:0;
     bottom:0;
     content:"";
-  }
-}
-.magic-box(@img: none){
-  &:before{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    content:"";
-    background: url("../img/@{img}") center no-repeat;
-  }
-}
-.magic-box(@img: none, @method: center no-repeat){
-  &:before{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    content:"";
-    background: url("../img/@{img}") @method;
   }
 }

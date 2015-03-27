@@ -1,5 +1,5 @@
 <?php
-// less css parsing. compiles to style.css
+## less css parsing. compiles to style.css
 require_once 'gears/less.php/Autoloader.php';
 Less_Autoloader::register();
 $options = array(
@@ -54,9 +54,8 @@ if ( function_exists('register_sidebar') ) {
 
 ## thumbs
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 144, 130, true );
-add_image_size( 'entryimage', 960, 200, true );
-add_image_size( 'mainimage', 560, 120, true );
+set_post_thumbnail_size( 320, 320, true );
+add_image_size( 'instagram', 640, 640, true );
 
 
 

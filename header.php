@@ -8,7 +8,7 @@
  */
 ?>
 <!doctype html>
-<html dir="ltr" lang="en" class="no-js">
+<html dir="ltr" lang="en">
 
 <meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type"     content="text/html; charset=UTF-8" />
@@ -31,7 +31,9 @@
 <body <?php body_class();?>>
 
 <nav id="nav">
-    <strong id="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></strong>
+    <strong id="logo">
+        <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+    </strong>
 
     <ul id="main-menu">
         <?php wp_nav_menu( array('theme_location' => 'main_nav', 'menu' => 'Main Menu', 'container' => '', 'items_wrap' => '%3$s' )); ?>
