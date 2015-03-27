@@ -1,4 +1,11 @@
 .idea/
+wp-tests/
+
 *.ds_store
 *.list
 *.lesscache
+*.sass-cache
+*.cache
+
+.sublime-workspace
+config.codekit
