@@ -45,7 +45,7 @@ base that matches the rest of the theme.
 custom page templates go here, ie `home-template.php` which are used for specific 
 pages or page layouts.
 
-### option less you say?
+### optional less you say?
 yeah. remove lines  3-11 in functions.php and be on your merry way.
 
 ## license
